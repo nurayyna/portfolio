@@ -13,7 +13,7 @@ export const profile = {
   // TODO: replace with your real profile links
   links: {
     resume: "/resume.pdf",
-    linkedin: "https://www.linkedin.com/in/nuraina",
+    linkedin: "https://www.linkedin.com/in/nur-aina-saipulismi-706b20224",
     github: "https://github.com/nuraina",
   },
   availability: "Open to Product / Frontend Engineering roles",
