@@ -9,7 +9,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-32 md:pt-40">
+    <section id="top" className="relative overflow-hidden pt-20 md:pt-24">
       {/* background texture */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-dotgrid mask-fade-y opacity-60" />
