@@ -33,7 +33,7 @@ export function Nav() {
           href="#top"
           className="flex items-center gap-2.5 pl-1 font-semibold tracking-tight text-ink"
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-ink text-[13px] font-bold text-white">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-navy text-[13px] font-bold text-white">
             NA
           </span>
           <span className="hidden text-sm sm:block">Nur Aina</span>
@@ -44,7 +44,7 @@ export function Nav() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-full px-3.5 py-1.5 text-sm text-zinc-600 transition-colors hover:bg-zinc-100 hover:text-ink"
+              className="rounded-full px-3.5 py-1.5 text-sm text-zinc-600 transition-colors hover:bg-teal/5 hover:text-teal"
             >
               {item.label}
             </Link>
@@ -56,7 +56,7 @@ export function Nav() {
             href={profile.links.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full bg-ink px-4 py-2 text-sm font-medium text-white transition-all hover:bg-ink-soft hover:-translate-y-0.5 md:inline-flex"
+            className="hidden rounded-full bg-navy px-4 py-2 text-sm font-medium text-white transition-all hover:bg-navy-soft hover:-translate-y-0.5 md:inline-flex"
           >
             Resume
           </a>
@@ -83,7 +83,7 @@ export function Nav() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-2xl px-4 py-3 text-sm text-zinc-700 hover:bg-zinc-100"
+                className="block rounded-2xl px-4 py-3 text-sm text-zinc-700 hover:bg-teal/5 hover:text-teal"
               >
                 {item.label}
               </Link>
@@ -92,7 +92,7 @@ export function Nav() {
               href={profile.links.resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-1 block rounded-2xl bg-ink px-4 py-3 text-center text-sm font-medium text-white"
+              className="mt-1 block rounded-2xl bg-navy px-4 py-3 text-center text-sm font-medium text-white"
             >
               Download Resume
             </a>

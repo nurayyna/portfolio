@@ -19,19 +19,19 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="scroll-mt-24 py-24 md:py-32">
+    <section id="contact" className="scroll-mt-24 bg-ivory-soft py-24 md:py-32">
       <div className="section">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="relative overflow-hidden rounded-[2.5rem] bg-ink px-8 py-16 text-white md:px-16 md:py-24"
+          className="relative overflow-hidden rounded-[2.5rem] bg-navy px-8 py-16 text-white md:px-16 md:py-24"
         >
           {/* ambient */}
           <div className="pointer-events-none absolute inset-0">
-            <div className="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-accent/30 blur-3xl" />
-            <div className="absolute -bottom-24 right-0 h-72 w-72 rounded-full bg-accent-soft/20 blur-3xl" />
+            <div className="absolute -left-20 -top-20 h-72 w-72 rounded-full bg-brown/25 blur-3xl" />
+            <div className="absolute -bottom-24 right-0 h-72 w-72 rounded-full bg-teal/30 blur-3xl" />
             <div
               className="absolute inset-0 opacity-[0.15]"
               style={{
@@ -61,7 +61,7 @@ export function Contact() {
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <a
                 href={`mailto:${profile.email}`}
-                className="group inline-flex h-12 items-center gap-2 rounded-full bg-white px-6 text-[15px] font-medium text-ink transition-all hover:-translate-y-0.5 hover:shadow-float"
+                className="group inline-flex h-12 items-center gap-2 rounded-full bg-brown px-6 text-[15px] font-medium text-white transition-all hover:-translate-y-0.5 hover:bg-brown-soft hover:shadow-float"
               >
                 <Mail className="h-4 w-4" />
                 Get in touch

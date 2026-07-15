@@ -13,7 +13,7 @@ export function Hero() {
       {/* background texture */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-dotgrid mask-fade-y opacity-60" />
-        <div className="absolute left-1/2 top-0 h-[420px] w-[820px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(79,70,229,0.08),transparent)]" />
+        <div className="absolute left-1/2 top-0 h-[420px] w-[820px] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(140,47,57,0.07),transparent)]" />
       </div>
 
       <div className="section grid items-center gap-12 pb-20 lg:grid-cols-[1.05fr_0.95fr] lg:pb-28">
@@ -60,16 +60,16 @@ export function Hero() {
           >
             <a
               href="#work"
-              className="group inline-flex h-12 items-center gap-2 rounded-full bg-ink px-6 text-[15px] font-medium text-white shadow-soft transition-all hover:-translate-y-0.5 hover:bg-ink-soft hover:shadow-card"
+              className="group inline-flex h-12 items-center gap-2 rounded-full bg-navy px-6 text-[15px] font-medium text-white shadow-soft transition-all hover:-translate-y-0.5 hover:bg-navy-soft hover:shadow-card"
             >
               View Projects
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              <ArrowRight className="h-4 w-4 text-brown transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
               href={profile.links.resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 items-center gap-2 rounded-full border border-zinc-200 bg-white px-6 text-[15px] font-medium text-ink shadow-ring transition-all hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-soft"
+              className="inline-flex h-12 items-center gap-2 rounded-full border border-navy/20 bg-white px-6 text-[15px] font-medium text-ink shadow-ring transition-all hover:-translate-y-0.5 hover:border-teal hover:text-teal hover:shadow-soft"
             >
               <Download className="h-4 w-4" />
               Resume
@@ -80,7 +80,7 @@ export function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-600 shadow-ring transition-all hover:-translate-y-0.5 hover:text-ink hover:shadow-soft"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-600 shadow-ring transition-all hover:-translate-y-0.5 hover:border-teal hover:text-teal hover:shadow-soft"
               >
                 <Linkedin className="h-4 w-4" />
               </a>
@@ -89,7 +89,7 @@ export function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-600 shadow-ring transition-all hover:-translate-y-0.5 hover:text-ink hover:shadow-soft"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-600 shadow-ring transition-all hover:-translate-y-0.5 hover:border-teal hover:text-teal hover:shadow-soft"
               >
                 <Github className="h-4 w-4" />
               </a>
@@ -103,9 +103,14 @@ export function Hero() {
             transition={{ duration: 0.6, ease, delay: 0.75 }}
             className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-zinc-100 pt-8"
           >
-            {hero.metrics.map((m) => (
+            {hero.metrics.map((m, i) => (
               <div key={m.label}>
-                <dt className="text-2xl font-semibold tracking-tight text-ink">{m.value}</dt>
+                <dt
+                  className="text-2xl font-semibold tracking-tight"
+                  style={{ color: ["#461220", "#8c2f39", "#b23a48"][i] ?? "#0a0a0b" }}
+                >
+                  {m.value}
+                </dt>
                 <dd className="mt-1 text-[13px] leading-snug text-zinc-500">{m.label}</dd>
               </div>
             ))}

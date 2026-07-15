@@ -100,7 +100,7 @@ function ProjectCard({
         <span
           className={cn(
             "flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-zinc-200 text-zinc-500 transition-all duration-300",
-            isOpen && "rotate-180 bg-ink text-white",
+            isOpen && "rotate-180 bg-navy text-white",
           )}
         >
           <ChevronDown className="h-4 w-4" />

@@ -9,6 +9,9 @@ import { cn } from "@/lib/utils";
 
 const icons = [GraduationCap, Briefcase, Building2, Rocket];
 
+// Subtle progression across the timeline: Foundation → Craft → Scale → Future
+const phaseColors = ["#461220", "#8c2f39", "#b23a48", "#fcb9b2"];
+
 export function Career() {
   return (
     <section id="journey" className="scroll-mt-24 py-24 md:py-32">
@@ -28,6 +31,7 @@ export function Career() {
               const Icon = icons[i] ?? Briefcase;
               const isCurrent = item.status === "current";
               const isFuture = item.status === "future";
+              const color = phaseColors[i] ?? "#8c2f39";
               return (
                 <Reveal key={item.title} delay={i * 0.1}>
                   <div className="relative">
@@ -38,12 +42,15 @@ export function Career() {
                       transition={{ delay: i * 0.1 + 0.15, type: "spring", stiffness: 260, damping: 18 }}
                       className={cn(
                         "relative z-10 mb-5 flex h-14 w-14 items-center justify-center rounded-2xl border",
-                        isCurrent
-                          ? "border-transparent bg-accent text-white shadow-[0_0_0_5px_rgba(79,70,229,0.12)]"
-                          : isFuture
-                            ? "border-dashed border-zinc-300 bg-white text-zinc-400"
-                            : "border-zinc-200 bg-white text-ink shadow-ring",
+                        isFuture && "border-dashed",
                       )}
+                      style={
+                        isCurrent
+                          ? { background: color, color: "#fff", borderColor: "transparent", boxShadow: `0 0 0 5px ${color}1f` }
+                          : isFuture
+                            ? { background: "#fff", color, borderColor: `${color}66` }
+                            : { background: "#fff", color, borderColor: `${color}26` }
+                      }
                     >
                       <Icon className="h-6 w-6" />
                     </motion.span>
@@ -51,17 +58,18 @@ export function Career() {
                     <div
                       className={cn(
                         "rounded-3xl border p-5 transition-shadow duration-300",
-                        isCurrent
-                          ? "border-accent/20 bg-accent-wash/50 shadow-soft"
-                          : "border-zinc-100 bg-white hover:shadow-soft",
+                        isCurrent ? "shadow-soft" : "border-zinc-100 bg-white hover:shadow-soft",
                       )}
+                      style={
+                        isCurrent
+                          ? { borderColor: `${color}33`, background: `${color}0d` }
+                          : undefined
+                      }
                     >
                       <div className="flex items-center justify-between">
                         <span
-                          className={cn(
-                            "font-mono text-[11px] uppercase tracking-[0.14em]",
-                            isCurrent ? "text-accent" : "text-zinc-400",
-                          )}
+                          className="font-mono text-[11px] uppercase tracking-[0.14em]"
+                          style={{ color }}
                         >
                           {item.phase}
                         </span>

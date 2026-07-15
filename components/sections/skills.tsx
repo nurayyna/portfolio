@@ -30,7 +30,7 @@ export function Skills() {
               <Reveal key={group.category} delay={(gi % 2) * 0.08}>
                 <div className="surface h-full rounded-4xl p-7 transition-shadow duration-300 hover:shadow-card">
                   <div className="flex items-center gap-3">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-ink text-white">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-navy text-white">
                       <Icon className="h-5 w-5" />
                     </span>
                     <div>

@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="border-t border-zinc-100 py-12">
       <div className="section flex flex-col items-center justify-between gap-6 md:flex-row">
         <div className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-ink text-[13px] font-bold text-white">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-navy text-[13px] font-bold text-white">
             NA
           </span>
           <div className="leading-tight">
@@ -22,7 +22,7 @@ export function Footer() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-[13px] text-zinc-500 transition-colors hover:text-ink"
+              className="text-[13px] text-zinc-500 transition-colors hover:text-teal"
             >
               {item.label}
             </Link>

@@ -5,6 +5,9 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal, RevealGroup, RevealItem } from "@/components/ui/reveal";
 import { about } from "@/lib/content";
 
+// Subtle progression across the journey: Foundation → Craft → Scale → Future
+const journeyColors = ["#461220", "#8c2f39", "#b23a48", "#fcb9b2"];
+
 export function About() {
   return (
     <section id="about" className="scroll-mt-24 py-24 md:py-32">
@@ -21,7 +24,7 @@ export function About() {
             {about.principles.map((p) => (
               <RevealItem
                 key={p.title}
-                className="surface rounded-3xl p-6 transition-shadow duration-300 hover:shadow-card"
+                className="rounded-3xl border border-brown/20 bg-brown-wash p-6 shadow-soft transition-shadow duration-300 hover:shadow-card"
               >
                 <h3 className="text-[15px] font-semibold text-ink">{p.title}</h3>
                 <p className="mt-2 text-[14px] leading-relaxed text-zinc-600">{p.body}</p>
@@ -35,7 +38,9 @@ export function About() {
               <p className="eyebrow kicker-dot mb-8">The journey so far</p>
             </Reveal>
             <ol className="relative border-l border-zinc-200 pl-8">
-              {about.journey.map((step, i) => (
+              {about.journey.map((step, i) => {
+                const color = journeyColors[i] ?? "#8c2f39";
+                return (
                 <Reveal
                   as="li"
                   key={step.title}
@@ -47,9 +52,13 @@ export function About() {
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.08 + 0.1, type: "spring", stiffness: 300, damping: 20 }}
-                    className="absolute -left-[41px] flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-accent shadow-[0_0_0_4px_rgba(79,70,229,0.12)]"
+                    className="absolute -left-[41px] flex h-5 w-5 items-center justify-center rounded-full border-2 border-white"
+                    style={{ background: color, boxShadow: `0 0 0 4px ${color}1f` }}
                   />
-                  <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
+                  <span
+                    className="font-mono text-[11px] uppercase tracking-[0.16em]"
+                    style={{ color }}
+                  >
                     {step.year}
                   </span>
                   <h4 className="mt-1 text-lg font-semibold text-ink">{step.title}</h4>
@@ -57,7 +66,8 @@ export function About() {
                     {step.body}
                   </p>
                 </Reveal>
-              ))}
+                );
+              })}
             </ol>
           </div>
         </div>

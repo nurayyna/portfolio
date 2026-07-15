@@ -105,7 +105,7 @@ export const projects: Project[] = [
     tagline: "Industrial Equipment Monitoring Platform",
     category: "Enterprise SaaS · Dashboards & Reporting",
     year: "2024–2025",
-    accent: "#4f46e5",
+    accent: "#8c2f39",
     summary:
       "A monitoring and reporting platform for industrial equipment — combining live dashboards, an editable report module, collaborative review, and an AI grammar assistant into one workflow.",
     stack: ["React", "TypeScript", "shadcn/ui", "Django REST API", "ECharts", "Tailwind CSS"],
@@ -172,7 +172,7 @@ export const projects: Project[] = [
     tagline: "Asset & Workflow Management Platform",
     category: "Enterprise SaaS · Workflow",
     year: "2024",
-    accent: "#0ea5e9",
+    accent: "#461220",
     summary:
       "An asset and workflow management platform where I focused on the claims workflow, an activity stream, and a series of UI and workflow optimizations that made everyday tasks faster.",
     stack: ["React", "TypeScript", "Tailwind CSS", "REST API"],
@@ -228,7 +228,7 @@ export const projects: Project[] = [
     tagline: "Corporate Website Rebuild & Migration",
     category: "Web · Performance & Migration",
     year: "2024",
-    accent: "#059669",
+    accent: "#b23a48",
     summary:
       "Migrated the company site off WordPress into a modern, maintainable React codebase — a responsive redesign with meaningful performance and maintainability gains.",
     stack: ["React", "Tailwind CSS", "Responsive Design"],
@@ -279,7 +279,7 @@ export const projects: Project[] = [
     tagline: "3D Anatomy Learning Platform — Final Year Project",
     category: "EdTech · 3D & Interaction",
     year: "2023",
-    accent: "#d97706",
+    accent: "#fcb9b2",
     summary:
       "A web platform for learning human anatomy through interactive 3D models, built as my final year project in collaboration with Malaysia Airlines Academy.",
     stack: ["Google Model Viewer", "Firebase", "Bootstrap", "JavaScript", "HTML"],
@@ -331,7 +331,7 @@ export const projects: Project[] = [
     tagline: "Data Visualization & Analytics",
     category: "Analytics · Data Visualization",
     year: "2023",
-    accent: "#0891b2",
+    accent: "#8c2f39",
     summary:
       "An analytics project turning climate data into interactive, decision-ready visualizations across Tableau, Power BI, and SAS.",
     stack: ["Tableau", "Power BI", "SAS", "Data Visualization"],

@@ -16,7 +16,7 @@ export function DashboardIllustration() {
   return (
     <div className="relative">
       {/* ambient glow */}
-      <div className="pointer-events-none absolute -inset-8 -z-10 rounded-[3rem] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(79,70,229,0.10),transparent_70%)] blur-2xl" />
+      <div className="pointer-events-none absolute -inset-8 -z-10 rounded-[3rem] bg-[radial-gradient(60%_60%_at_50%_0%,rgba(140,47,57,0.10),transparent_70%)] blur-2xl" />
 
       <motion.div
         initial={{ opacity: 0, y: 24, rotateX: 6 }}
@@ -54,13 +54,13 @@ export function DashboardIllustration() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 + i * 0.1, duration: 0.6 }}
-              className="rounded-2xl border border-zinc-100 bg-zinc-50/60 p-3"
+              className="rounded-2xl border border-ivory-deep/70 bg-ivory/50 p-3"
             >
-              <p className="text-[10px] font-medium uppercase tracking-wider text-zinc-400">
+              <p className="text-[10px] font-medium uppercase tracking-wider text-zinc-500">
                 {kpi.label}
               </p>
               <div className="mt-1 flex items-end justify-between">
-                <span className="text-lg font-semibold text-ink">{kpi.value}</span>
+                <span className="text-lg font-semibold text-navy">{kpi.value}</span>
                 <span className="flex items-center gap-0.5 text-[10px] font-medium text-emerald-600">
                   <ArrowUpRight className="h-3 w-3" />
                   {kpi.trend}
@@ -97,13 +97,13 @@ export function DashboardIllustration() {
             <svg viewBox="0 0 100 60" className="mt-3 h-24 w-full overflow-visible">
               <defs>
                 <linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="rgba(79,70,229,0.22)" />
-                  <stop offset="100%" stopColor="rgba(79,70,229,0)" />
+                  <stop offset="0%" stopColor="rgba(140,47,57,0.22)" />
+                  <stop offset="100%" stopColor="rgba(140,47,57,0)" />
                 </linearGradient>
               </defs>
               <motion.polyline
                 fill="none"
-                stroke="#4f46e5"
+                stroke="#8c2f39"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -132,9 +132,9 @@ export function DashboardIllustration() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.6 }}
-          className="mt-3 flex items-center gap-3 rounded-2xl border border-accent/15 bg-accent-wash/60 p-3"
+          className="mt-3 flex items-center gap-3 rounded-2xl border border-brown/20 bg-brown-wash/70 p-3"
         >
-          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-white">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brown text-white">
             <Bot className="h-4 w-4" />
           </span>
           <div className="min-w-0">
@@ -157,7 +157,7 @@ export function DashboardIllustration() {
         className="absolute -right-3 top-16 hidden rounded-2xl border border-zinc-100 bg-white/90 p-3 shadow-card backdrop-blur md:block"
       >
         <div className="flex items-center gap-2">
-          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-ink text-[10px] font-semibold text-white">
+          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-navy text-[10px] font-semibold text-white">
             NA
           </span>
           <div className="h-1.5 w-16 rounded-full bg-zinc-200" />

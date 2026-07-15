@@ -19,10 +19,38 @@ const config: Config = {
           DEFAULT: "#0a0a0b",
           soft: "#18181b",
         },
+        // "Autumn Sunset" palette — mapped to role-tokens by luminance so the
+        // design's dark→light hierarchy is preserved. Token names are roles, not hues.
+        navy: {
+          DEFAULT: "#461220", // darkest — primary UI: buttons, dark chrome, emphasis
+          soft: "#5e1b2d",
+        },
+        teal: {
+          DEFAULT: "#8c2f39", // interactive: charts, links, data viz, hovers
+          soft: "#a3444e",
+          wash: "#f5e6e8",
+        },
+        ivory: {
+          DEFAULT: "#fed0bb", // surfaces: cards, section bands, hover
+          soft: "#fff4ee",
+          deep: "#f8c2a6",
+        },
+        orange: {
+          DEFAULT: "#fcb9b2", // sparing accent: minor identity markers
+          soft: "#fdcbc5",
+          wash: "#fef1ef",
+        },
+        brown: {
+          DEFAULT: "#b23a48", // accent: CTAs, highlights, key metrics
+          soft: "#c44e5b",
+          wash: "#f8e7ea",
+        },
+        // `accent` is the general interactive color → teal role.
+        // Repointing here recolors every existing accent usage in one place.
         accent: {
-          DEFAULT: "#4f46e5",
-          soft: "#6366f1",
-          wash: "#eef2ff",
+          DEFAULT: "#8c2f39",
+          soft: "#a3444e",
+          wash: "#f5e6e8",
         },
       },
       fontFamily: {
