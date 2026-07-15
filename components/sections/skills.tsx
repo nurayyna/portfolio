@@ -20,7 +20,7 @@ export function Skills() {
         <SectionHeading
           eyebrow="Capabilities"
           title="The toolkit behind the products."
-          description="A stack chosen for building maintainable, data-dense, product-grade interfaces — across frontend, visualization, data, and design."
+          description="A stack chosen for building maintainable, data-dense, product-grade interfaces across frontend, visualization, data, and design."
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2">

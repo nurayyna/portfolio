@@ -19,7 +19,7 @@ export function Career() {
         <SectionHeading
           eyebrow="Career Timeline"
           title="From multimedia computing to product engineering."
-          description="The path so far — and where it's heading."
+          description="The path so far, and where it's heading."
         />
 
         <div className="relative mt-16">

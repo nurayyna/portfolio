@@ -30,7 +30,7 @@ export function Footer() {
         </nav>
 
         <p className="font-mono text-[11px] text-zinc-400">
-          © {new Date().getFullYear()} — Designed & built by {profile.name.split(" ")[1]}
+          © {new Date().getFullYear()} · Designed & built by {profile.name.split(" ")[1]}
         </p>
       </div>
     </footer>

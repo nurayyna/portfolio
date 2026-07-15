@@ -54,7 +54,7 @@ export function Contact() {
               Let's build something people actually enjoy using.
             </h2>
             <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-white/70">
-              Whether it's a dashboard, a reporting system, or an AI-assisted workflow — I'd love to
+              Whether it's a dashboard, a reporting system, or an AI-assisted workflow, I'd love to
               hear about the problem you're solving. Let's talk.
             </p>
 

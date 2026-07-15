@@ -13,7 +13,7 @@ export function Explorations() {
         <SectionHeading
           eyebrow="Design Thinking"
           title="Every decision has a reason behind it."
-          description="A look under the hood at how I think through interface problems — from research and context to the decision and its outcome."
+          description="A look under the hood at how I think through interface problems, from research and context to the decision and its outcome."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

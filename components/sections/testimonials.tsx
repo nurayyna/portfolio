@@ -12,7 +12,7 @@ export function Testimonials() {
         <SectionHeading
           eyebrow="Testimonials"
           title="Words from people I'll build with."
-          description="These spaces are reserved for future managers, collaborators, and clients — a placeholder for the outcomes we'll ship together."
+          description="These spaces are reserved for future managers, collaborators, and clients, a placeholder for the outcomes we'll ship together."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-3">

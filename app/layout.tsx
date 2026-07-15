@@ -19,11 +19,11 @@ const siteUrl = "https://nuraina.dev";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Nur Aina Saipulismi — Product-focused Frontend Engineer",
+    default: "Nur Aina Saipulismi · Product-focused Frontend Engineer",
     template: "%s · Nur Aina Saipulismi",
   },
   description:
-    "I build enterprise digital experiences that simplify complex workflows — dashboards, reporting systems, and intelligent, data-driven interfaces.",
+    "I build enterprise digital experiences that simplify complex workflows: dashboards, reporting systems, and intelligent, data-driven interfaces.",
   keywords: [
     "Frontend Engineer",
     "Product Engineer",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Nur Aina Saipulismi" }],
   openGraph: {
-    title: "Nur Aina Saipulismi — Product-focused Frontend Engineer",
+    title: "Nur Aina Saipulismi · Product-focused Frontend Engineer",
     description:
       "Enterprise digital experiences that simplify complex workflows. Dashboards, reporting systems, and intelligent interfaces.",
     url: siteUrl,
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nur Aina Saipulismi — Product-focused Frontend Engineer",
+    title: "Nur Aina Saipulismi · Product-focused Frontend Engineer",
     description:
       "Enterprise digital experiences that simplify complex workflows.",
   },
