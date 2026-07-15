@@ -25,7 +25,7 @@ export const hero = {
   subhead:
     "I'm a frontend developer specializing in data-dense dashboards, reporting systems, and intelligent interfaces. I care less about writing code and more about the product it becomes — clarity, flow, and the business outcome on the other side.",
   metrics: [
-    { value: "5+", label: "Enterprise products shipped" },
+    { value: "3", label: "Enterprise products shipped" },
     { value: "40+", label: "Reusable UI components built" },
     { value: "AI", label: "Assistants integrated into workflows" },
   ],
@@ -102,15 +102,15 @@ export const projects: Project[] = [
     slug: "vector",
     index: "01",
     name: "VECTOR",
-    tagline: "Industrial Equipment Monitoring Platform",
+    tagline: "Predictive Maintenance Platform for Oil & Gas",
     category: "Enterprise SaaS · Dashboards & Reporting",
     year: "2024–2025",
     accent: "#8c2f39",
     summary:
-      "A monitoring and reporting platform for industrial equipment — combining live dashboards, an editable report module, collaborative review, and an AI grammar assistant into one workflow.",
+      "A predictive-maintenance and vibration-analysis platform for industrial equipment in oil & gas environments — combining live equipment-health dashboards, an editable reporting module, collaborative review, and an AI grammar assistant into one workflow.",
     stack: ["React", "TypeScript", "shadcn/ui", "Django REST API", "ECharts", "Tailwind CSS"],
     problem:
-      "Engineers monitoring industrial equipment lived across spreadsheets, disconnected charts, and email threads. Turning raw sensor and inspection data into a report that leadership could act on took days, and feedback got lost across tools. The business needed a single place to see equipment health, write the report, and review it together.",
+      "Engineers running predictive maintenance on oil & gas equipment lived across spreadsheets, disconnected charts, and email threads. Turning raw sensor, vibration, and inspection data into a report that leadership could act on took days, and feedback got lost across tools. The business needed a single place to see equipment health, write the report, and review it together.",
     role:
       "Frontend Developer — owned the dashboard, reporting, and collaboration UI end to end, and shaped the frontend architecture the team built on.",
     responsibilities: [
@@ -466,6 +466,7 @@ export const skillGroups: SkillGroup[] = [
     blurb: "Turning dense data into decisions.",
     skills: [
       { name: "ECharts" },
+      { name: "Recharts" },
       { name: "Power BI" },
       { name: "Tableau" },
       { name: "SAS" },
@@ -476,6 +477,7 @@ export const skillGroups: SkillGroup[] = [
     blurb: "Integrating and modeling the data layer.",
     skills: [
       { name: "Django REST API" },
+      { name: "MySQL" },
       { name: "Firebase" },
       { name: "PHP" },
       { name: "REST APIs" },
@@ -505,25 +507,25 @@ export type TimelineItem = {
 export const career: TimelineItem[] = [
   {
     phase: "Education",
-    title: "Multimedia Computing",
-    org: "University",
-    period: "Foundation",
-    body: "A degree at the intersection of design, interaction, and engineering — where product thinking became instinct.",
+    title: "BSc Computer Science",
+    org: "Universiti Malaya",
+    period: "2021–2025",
+    body: "Computer Science (Multimedia Computing), CGPA 3.62 — a degree at the intersection of design, interaction, and engineering, where product thinking became instinct.",
     status: "past",
   },
   {
     phase: "Internship",
-    title: "Frontend Internship",
-    org: "Industry",
-    period: "Early career",
-    body: "First taste of shipping real software to real users, and the discipline of production frontend work.",
+    title: "Data Analyst and Support Team Trainee",
+    org: "PETRONAS Chemicals MTBE",
+    period: "2023–2024",
+    body: "Built interactive Power BI dashboards and ran exploratory data analysis to support business decisions during turnaround operations — where the data-visualization instinct took hold.",
     status: "past",
   },
   {
     phase: "Now",
     title: "Software Developer",
     org: "Intekma",
-    period: "Current",
+    period: "2025–Present",
     body: "Building enterprise dashboards, reporting systems, and AI-assisted workflows — owning frontend surfaces end to end.",
     status: "current",
   },
@@ -531,7 +533,7 @@ export const career: TimelineItem[] = [
     phase: "Next",
     title: "Product / Frontend Engineer",
     org: "Modern SaaS · AI · FAANG",
-    period: "Future",
+    period: "Ahead",
     body: "Growing into a role where product, design, and engineering meet — building intelligent, data-driven products at scale.",
     status: "future",
   },
