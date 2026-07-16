@@ -9,12 +9,12 @@ export const profile = {
   role: "Frontend Developer",
   discipline: "Data Visualization & Interactive Systems",
   location: "Malaysia",
-  email: "nuraina@intekma.net",
+  email: "nurainasaipulismi@gmail.com",
   // TODO: replace with your real profile links
   links: {
     resume: "/resume.pdf",
     linkedin: "https://www.linkedin.com/in/nur-aina-saipulismi-706b20224",
-    github: "https://github.com/nuraina",
+    github: "https://github.com/nurayyna",
   },
   availability: "Open to Product / Frontend Engineering roles",
 };
